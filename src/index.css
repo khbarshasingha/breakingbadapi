@@ -12,7 +12,6 @@ code {
     monospace;
 }
 main {
-  margin-top: 5rem;
   min-height: 80vh;
 }
 .text-style {

@@ -42,6 +42,7 @@ export const EpisodeScreen = () => {
           className="text-primary "
           variant="dark"
           width="50rem"
+          responsive
         >
           <thead>
             <tr className="table-light">
