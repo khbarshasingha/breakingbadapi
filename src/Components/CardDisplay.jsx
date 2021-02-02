@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, ListGroup, Modal, Button } from "react-bootstrap";
 
-export const Cardlist = ({ name, src, bday, occ, status, nname, app }) => {
+export const CardDisplay = ({ name, src, bday, occ, status, nname, app }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

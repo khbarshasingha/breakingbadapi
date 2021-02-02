@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
-import { Cardlist } from "../Components/Cardlist";
+import { CardDisplay } from "../Components/CardDisplay";
 import { Row, Col, Container } from "react-bootstrap";
 
 export const CharacterScreen = () => {
@@ -38,7 +37,7 @@ export const CharacterScreen = () => {
         {items.map(item => (
           <Col sm={12} md={6} lg={4} xl={3}>
             {" "}
-            <Cardlist
+            <CardDisplay
               name={item.name}
               src={item.img}
               bday={item.birthday}

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import { Row, Col, Container, Table } from "react-bootstrap";
 import { TableDisplay } from "../Components/TableDisplay";
-import "./tablestyle.css";
 
 export const EpisodeScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +33,7 @@ export const EpisodeScreen = () => {
     </Container>
   ) : (
     <>
-      <Container className="tablecss">
+      <Container>
         {" "}
         <Table
           striped
