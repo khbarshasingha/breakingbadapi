@@ -38,7 +38,15 @@ export const CharacterScreen = () => {
         {items.map(item => (
           <Col sm={12} md={6} lg={4} xl={3}>
             {" "}
-            <Cardlist name={item.name} src={item.img} />
+            <Cardlist
+              name={item.name}
+              src={item.img}
+              bday={item.birthday}
+              occ={item.occupation}
+              status={item.status}
+              nname={item.nickname}
+              app={item.appearance}
+            />
           </Col>
         ))}
       </Row>
