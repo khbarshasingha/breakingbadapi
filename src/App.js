@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import { useState } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { HomeScreen } from "./Screens/HomeScreen";
@@ -22,7 +23,7 @@ function App() {
           <Route path="/episodes" exact component={EpisodeScreen} />
         </Switch>
       </main>
-      <footer>
+      <footer className="text-style">
         {" "}
         <Footer />
       </footer>

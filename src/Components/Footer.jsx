@@ -1,10 +1,26 @@
 import React from "react";
-import { Row, Container } from "react-bootstrap";
+import { Row, Container, Col } from "react-bootstrap";
 
 function Footer() {
   return (
-    <Container fluid>
-      <Row>This is the footer</Row>
+    <Container style={{ textAlign: "center" }} fluid>
+      <Row>
+        <Col>
+          {" "}
+          My projects{" "}
+          <a href="https://www.linkedin.com/in/kh-barsha-singha-59b279a1">
+            <i class="fab fa-github-square" />
+          </a>{" "}
+        </Col>
+        <Col>
+          {" "}
+          Contact me{" "}
+          <a href="https://github.com/khbarshasingha">
+            {" "}
+            <i class="fab fa-linkedin" />
+          </a>
+        </Col>
+      </Row>
     </Container>
   );
 }

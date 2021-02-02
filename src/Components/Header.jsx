@@ -18,7 +18,12 @@ export const Header = () => {
     >
       <LinkContainer to="/">
         <Navbar.Brand>
-          <img src="logo.jpg" width="150rem" height="100rem" />
+          <span className="flicker">Br</span>
+          <span className="fast-flicker">E</span>
+          <span className="flicker">aking</span>
+          <span className="fast-flicker">B</span>
+          <span className="fast-flicker">Ad</span>{" "}
+          <i class="fas fa-house-damage fast-flicker" />
         </Navbar.Brand>
       </LinkContainer>
 
