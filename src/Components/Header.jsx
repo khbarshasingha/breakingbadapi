@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import { Navbar, Nav, Form, Button } from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 export const Header = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
     <Navbar
       className="text-style"
@@ -23,7 +19,7 @@ export const Header = () => {
           <span className="flicker">aking</span>
           <span className="fast-flicker">B</span>
           <span className="fast-flicker">Ad</span>{" "}
-          <i class="fas fa-house-damage fast-flicker" />
+          <i className="fas fa-house-damage fast-flicker" />
         </Navbar.Brand>
       </LinkContainer>
 

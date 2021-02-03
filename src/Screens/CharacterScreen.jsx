@@ -14,7 +14,6 @@ export const CharacterScreen = () => {
       response.json().then(response => setItems(response));
 
       setIsLoading(false);
-      console.log(items);
     };
     fetchChar();
   }, []);
@@ -35,9 +34,10 @@ export const CharacterScreen = () => {
     <Container>
       <Row>
         {items.map(item => (
-          <Col sm={12} md={6} lg={4} xl={3}>
+          <Col key={item.char_id} sm={12} md={6} lg={4} xl={3}>
             {" "}
             <CardDisplay
+              key={item.char_id}
               name={item.name}
               src={item.img}
               bday={item.birthday}

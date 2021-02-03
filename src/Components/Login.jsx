@@ -13,10 +13,11 @@ export const Login = () => {
   };
   const handleSubmit = event => {
     if (
-      logindata.email == window.localStorage.getItem("email") &&
-      logindata.pwd == window.localStorage.getItem("pwd")
+      logindata.email === window.localStorage.getItem("email") &&
+      logindata.pwd === window.localStorage.getItem("pwd")
     ) {
       setisloggedin(true);
+      window.localStorage.setItem("loggedin", isloggedin);
       alert("view episode or characters");
     } else {
       alert("wrong credentials");

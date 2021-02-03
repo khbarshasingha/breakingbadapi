@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./cssfiles/signup.css";
 import { Form, Row, Col, Button, Container } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const SignUp = () => {
   const [udata, setudata] = useState({ fname: "", email: "", pwd: "" });

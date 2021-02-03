@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Row, Col, Container, Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import { TableDisplay } from "../Components/TableDisplay";
 
 export const EpisodeScreen = () => {
@@ -63,14 +63,6 @@ export const EpisodeScreen = () => {
           </tbody>
         </Table>
       </Container>
-      {/* {episodes.map(data => (
-        <Tablemap
-          title={data.title}
-          season={data.season}
-          ep={data.episode}
-          a_date={data.air_date}
-        />
-      ))} */}
     </>
   );
 };

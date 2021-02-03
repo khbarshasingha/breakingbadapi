@@ -9,7 +9,7 @@ function Footer() {
           {" "}
           My projects{" "}
           <a href="https://www.linkedin.com/in/kh-barsha-singha-59b279a1">
-            <i class="fab fa-github-square" />
+            <i className="fab fa-github-square" />
           </a>{" "}
         </Col>
         <Col>
@@ -17,7 +17,7 @@ function Footer() {
           Contact me{" "}
           <a href="https://github.com/khbarshasingha">
             {" "}
-            <i class="fab fa-linkedin" />
+            <i className="fab fa-linkedin" />
           </a>
         </Col>
       </Row>
